@@ -748,7 +748,7 @@ int piGpioLayout (void)
 //	they can't get it to work on weirdFruitPi boards...
 
   while (fgets (line, 120, cpuFd) != NULL){
-    printf("line %s\n",line);
+    //printf("line %s\n",line);
     if (strncmp (line, "Hardware", 8) == 0){
 	  //printf("Trovato %s\n",line);
       break ;
