@@ -756,7 +756,7 @@ int piGpioLayout (void)
   }
 
   sprintf(line,"%s","BCM2835");
-
+  printf("Trovato 1 %s\n",line);
   if (strncmp (line, "Hardware", 8) != 0)
     piGpioLayoutOops ("No \"Hardware\" line") ;
 
