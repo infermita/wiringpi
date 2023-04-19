@@ -749,8 +749,10 @@ int piGpioLayout (void)
 
   while (fgets (line, 120, cpuFd) != NULL){
     printf("line %s\n",line);
-    if (strncmp (line, "Hardware", 8) == 0)
+    if (strncmp (line, "Hardware", 8) == 0){
+		printf("Trovato %s\n",line);
       break ;
+	}
   }
 
   sprintf(line,"%s","BCM2835");
