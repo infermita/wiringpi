@@ -747,9 +747,11 @@ int piGpioLayout (void)
 //	on a Pi. I'm getting fed-up with people whinging at me because
 //	they can't get it to work on weirdFruitPi boards...
 
-  while (fgets (line, 120, cpuFd) != NULL)
+  while (fgets (line, 120, cpuFd) != NULL){
+    printf("line %s\n",line);
     if (strncmp (line, "Hardware", 8) == 0)
       break ;
+  }
 
   sprintf(line,"%s","BCM2835");
 
