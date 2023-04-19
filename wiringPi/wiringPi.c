@@ -750,13 +750,13 @@ int piGpioLayout (void)
   while (fgets (line, 120, cpuFd) != NULL){
     printf("line %s\n",line);
     if (strncmp (line, "Hardware", 8) == 0){
-		printf("Trovato %s\n",line);
+	  //printf("Trovato %s\n",line);
       break ;
 	}
   }
 
   sprintf(line,"%s","BCM2835");
-  printf("Trovato 1 %s\n",line);
+  //printf("Trovato 1 %s\n",line);
   //if (strncmp (line, "Hardware", 8) != 0)
   //  piGpioLayoutOops ("No \"Hardware\" line") ;
 
